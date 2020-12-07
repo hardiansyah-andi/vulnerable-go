@@ -15,6 +15,12 @@ func main() {
 	executeQuery(userId)
 }
 
+func executeVulnerableQuery(userId string) error {
+	sql := "SELECT * FROM Users WHERE UserId = " + userId
+	fmt.Println(sql)
+	return nil
+}
+
 func executeQuery(userId string) error {
 	re := regexp.MustCompile("^[a-zA-Z0-9_]*$")
 	if !re.MatchString(userId) {
