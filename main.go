@@ -32,10 +32,14 @@ func main() {
 	insertUser(sqliteDatabase, "Glen Rangel", "pass2")
 	insertUser(sqliteDatabase, "Martin Martins", "secret")
 
-	userId := os.Args[1]
+	inputType := os.Args[1]
+	userId := os.Args[2]
 
-	//executeVulnerableQuery(sqliteDatabase, userId)
-	executeQuery(sqliteDatabase, userId)
+	if inputType == "1" {
+		executeVulnerableQuery(sqliteDatabase, userId)
+	} else {
+		executeQuery(sqliteDatabase, userId)
+	}
 }
 
 func insertUser(db *sql.DB, name string, password string) {
