@@ -8,5 +8,6 @@ func main() {
 	fmt.Println(endsWith("go gopher", "go"))
 }
 func endsWith(x, y string) bool {
-  return strings.LastIndex(x, y) == len(x) - len(y)
+  index := strings.LastIndex(x, y)
+  return index != -1 && index == len(x) - len(y)
 }
