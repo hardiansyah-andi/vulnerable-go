@@ -11,8 +11,8 @@ import (
 func main() {
 	userId := os.Args[1]
 
-	// executeVulnerableQuery(userId)
-	executeQuery(userId)
+	executeVulnerableQuery(userId)
+	//executeQuery(userId)
 }
 
 func executeVulnerableQuery(userId string) error {
