@@ -1,6 +1,6 @@
 # vulnerable-go
 
-This repository contains source codes for vulnerability testing. Codes in this repository contains bad practices, bugs, and vulnerabilities. These are intended for **demonstration purposes only**.
+This repository contains source codes for vulnerability testing. Codes in this repository contains bad practices, bugs, and sql injection vulnerabilities. These are intended for **demonstration purposes only**.
 
 # how to
 
