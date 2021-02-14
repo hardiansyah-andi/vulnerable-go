@@ -34,8 +34,8 @@ func main() {
 
 	userId := os.Args[1]
 
-	//executeVulnerableQuery(sqliteDatabase, userId)
-	executeQuery(sqliteDatabase, userId)
+	executeVulnerableQuery(sqliteDatabase, userId)
+	//executeQuery(sqliteDatabase, userId)
 }
 
 func insertUser(db *sql.DB, name string, password string) {
